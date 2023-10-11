@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuturemite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Nuturemite</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('products') }}">Products</a></li>
+      <li><a href="{{ url_for('registration') }}">Vendor Registration</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Homepage</h2>
+      <!-- Content for homepage -->
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <!-- Content for products page -->
+    </section>
+
+    <section id="registration">
+      <h2>Vendor Registration</h2>
+      <!-- Content for vendor registration page -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Nuturemite. All rights reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
